@@ -1,0 +1,376 @@
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffff;
+  padding: 8px 0px;
+  border-top: 0.3px solid rgba(149, 149, 149, 0.363);
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.iconclass {
+  width: 30px;
+  height: 30px;
+}
+
+.header-left {
+  /* padding-left: 156px; */
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  border-radius: 1px;
+  padding: 16px;
+  width: 30px;
+  height: 30px;
+}
+
+.header-left input[type="text"] {
+  padding: 6px;
+  margin-right: 16px;
+  font-size: 17px;
+  background: #edf3f8;
+  border-radius: 4px;
+}
+
+.header-mid {
+  display: flex;
+  align-items: start;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: gray;
+  margin-right: 20px;
+}
+
+.icon-text i {
+  font-size: 24px;
+}
+
+.icon-text span {
+  margin-top: 5px;
+  font-size: 14px;
+  color: gray;
+}
+
+.icon-text:hover span,
+.icon-text:hover i {
+  color: black;
+}
+.page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 24px;
+  padding: 24px 40px 0 40px;
+}
+.pageL {
+  flex-grow: 1;
+  max-width: 804px;
+  position: relative;
+}
+.pageR {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  max-width: 300px;
+}
+
+.first {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid rgba(149, 149, 149, 0.363);
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
+}
+
+.line span {
+  color: black;
+  font-weight: bold;
+}
+
+.line i {
+  color: rgb(0, 0, 0);
+  padding-right: 10px;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(149, 149, 149, 0.363);
+  margin: 16px 0; /* Center the hr */
+}
+
+p {
+  margin: 0; /* Remove default margin */
+  color: rgb(168, 163, 163);
+}
+.second {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid rgba(149, 149, 149, 0.363);
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+.component {
+  display: flex;
+  flex-direction: row;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  align-items: start;
+  margin-left: 10px;
+}
+.user button {
+  border-radius: 30px;
+}
+.profile-cover {
+  position: relative;
+  width: 100%;
+  background-color: #f4f2ee;
+}
+
+.cover-photo {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjusted height */
+  background-color: #a0c4ff;
+}
+
+.cover-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-camera-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.profile-pen-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.profile-picture {
+  z-index: 1;
+  position: absolute;
+  margin-top: -5px;
+  top: 230px; /* Adjusted top position */
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  position: sticky;
+  /* width: 100%; */
+  width: auto;
+  padding: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 0 10px rgba(149, 149, 149, 0.363);
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.profile h2 {
+  margin: 10px 0;
+}
+
+.profile p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.contact-info {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+.contact-info:hover {
+  text-decoration: underline;
+}
+
+.open-to {
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.add-profile-section,
+.enhance-profile {
+  color: #0073b1;
+  background-color: white;
+  border: 1px solid #0073b1;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.more {
+  color: rgb(48, 43, 43);
+  background-color: white;
+  border: 1px solid rgb(48, 43, 43);
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ebf4fd;
+}
+.open-to:hover {
+  background-color: #4d7285;
+}
+
+.suggestions {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px 0; /* Updated margin to separate suggestions section from top and bottom */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(149, 149, 149, 0.363);
+  width: calc(100% - 40px);
+}
+
+.suggestions h3 {
+  margin: 0;
+}
+.suggestions h4 {
+  margin: 0;
+  margin-top: 10px;
+  color: #6d6d6d;
+}
+.suggestions h5 {
+  margin: 0;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  color: #5e5858;
+}
+.summary {
+  display: flex;
+  justify-content: start;
+  justify-items: start;
+  flex-direction: column;
+  border: 1px solid rgba(149, 149, 149, 0.363);
+  border-radius: 30px;
+  height: 135px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.summary-button {
+  padding-top: 5px;
+  border-radius: 30px;
+  border: 2px solid rgba(149, 149, 149, 0.363);
+  color: #6d6d6d;
+  width: 20%;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-items: start;
+  justify-content: space-between;
+}
+.contentx {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: start;
+}
+.contenty {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-left,
+  .header-mid {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
